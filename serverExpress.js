@@ -89,7 +89,7 @@ wsc.on('message', (msg) => {
 app.use(morgan('combined'));
 
 // POST Api.
-app.post('/getLastBlock', function (req, res) {
+app.post('/getLastBlocks', function (req, res) {
     getLastBlocks(db, function (docs) {
         res.send(docs);
         res.end()
