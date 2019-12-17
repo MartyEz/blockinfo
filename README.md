@@ -11,9 +11,9 @@ It can display tx details of a specific block.
 serverExpress.js is the backend.
 - It connects to blockchain.info websocket to get new block info.
 - When a new block is received, it updates front-end clients through another websocket
-- It registers new block info to a mongod
+- It registers new block info to a mongodb
 
-blockchain.info websocket only provides meta info about a btc block, not the txs presents in the block.
+blockchain.info websocket only provides meta info about a btc block, not the txs present in the block.
 
 reactjs is the front-end.
 - At the main page, it asks mongodb ( trough backend ) to get info of last 20 blocks
