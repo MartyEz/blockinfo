@@ -6,12 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route,Switch} from "react-router-dom";
 import AppTx from "./AppTx";
-import AppSearch from './AppSearch'
 
 const Root = () => (
     <Router>
       <Switch>
-          <Route exact path ="/card/:id" component={AppSearch} />
           <Route exact path ="/block/:id" component={AppTx} />
           <Route path ="/" component={App} />
       </Switch>
