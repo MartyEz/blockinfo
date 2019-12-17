@@ -1,7 +1,9 @@
 # Blockinfo
 
 This is a simple btc blockinfo repo using reactjs.
+
 It displays basic infos about recent blocks, register theses infos to a mongodb.
+
 It can display tx details of a specific block.
 
 # Files
@@ -22,4 +24,4 @@ proxy.js is a proxy used to avoid cors errors.
 
 # Sequence Diagram
 
-
+[Alt text](diagrams/mongoCallSeqDiam.png?raw=true "Title")
