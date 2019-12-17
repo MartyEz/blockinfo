@@ -24,4 +24,7 @@ proxy.js is a proxy used to avoid cors errors.
 
 # Sequence Diagram
 
-[Alt text](diagrams/mongoCallSeqDiam.png?raw=true "Title")
+[Alt text](diagrams/mongoCallSeqDiam.png?raw=true)
+
+[Alt text](diagrams/websockerSeqDiag.png?raw=true)
+
