@@ -21,7 +21,7 @@ const client = new MongoClient(url);
 let db = null;
 
 // This function insert new document to mongodb
-const insertDocuments = function (db, data, callback) {
+const addNewBlock = function (db, data, callback) {
     const collection = db.collection('btcblock');
     collection.insert([
         data], function (err, result) {
@@ -73,7 +73,7 @@ wsc.on('message', (msg) => {
     // parse infos received into json format
     let json = JSON.parse(msg);
     // insert parsed info to mongodb
-    insertDocuments(db, json, function (result) {
+    addNewBlock(db, json, function (result) {
     });
     // Send new info to front-end clients connected to the backend's websocket server
     wss.clients.forEach((clientToSend) => {

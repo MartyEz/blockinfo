@@ -9,8 +9,6 @@ function App() {
                 <DataManager/>
             </div>
         );
-
-
 }
 
 export default App;
