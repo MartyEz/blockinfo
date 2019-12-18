@@ -25,8 +25,10 @@ proxy.js is a proxy used to avoid cors errors.
 # Sequence Diagram
 
 Mongodb calls diagram :
+
 ![alt text](diagrams/mongoCallSeqDiam.png)
 
 Websockets calls diagram :
+
 ![alt text](diagrams/websockerSeqDiag.png)
 
